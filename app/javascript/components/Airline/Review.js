@@ -4,7 +4,6 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
-  color: #ff0000;
 `
 
 const Card = styled.div`
@@ -33,13 +32,13 @@ const Review = (props) => {
       <div className="totalReviews">{total} 人のユーザーが評価しています</div>
       <Card>
         <Title>
-          {props.title}
+          [reviews title]
         </Title>
         <Description>
-          {props.description}
+          [reviews description]
         </Description>
         <div className="review-rating">
-          {props.score}
+          [reviews score]
         </div>
       </Card>
     </Wrapper>
